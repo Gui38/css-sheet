@@ -17,12 +17,12 @@ consider having your user modify the css and store it server side ?
 *Works v 0.1.0*\
 To run the module, you must first create an object :
 ```js
-var yourCssSheet = virtualCssSheet(document);
+var yourCssSheet = new virtualCssSheet(document);
 ```
-You can then call its functions.
+You can then call its functions.\
 (specifying a document isn't compulsory
-but without a valid HTMLDocument object set as\
-*yourCssSheet.document*\
+but without a valid HTMLDocument object set as
+*yourCssSheet.document*
 you will not be able to upload automatically)
 
 *possible upgrades :*\

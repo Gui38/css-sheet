@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<!-- THIS DOCUMENT HAS NO <head>
+  but it seems to work anyway
+  hope it will work with node documents...
+-->
+
+  <body>
+
+    <div class="VCS">
+      hello world
+    </div>
+
+  </body>
+
+  <script type="text/javascript" src="../virtualCssSheet.js"></script>
+  <script type="text/javascript">
+
+cssSheet = new virtualCssSheet(document);
+
+cssSheet.set(".VCS", "background", "#FA7");
+cssSheet.set(".VCS", "font-size", "2em");
+cssSheet.set(".VCS", "color", "#FFF");
+
+  </script>
+</html>

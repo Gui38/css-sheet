@@ -1,0 +1,7 @@
+{
+    "name": "virtualCssSheet",
+    "version": "0.1.0",
+    "dependencies": {},
+    "author": "Guillaume3 <guillaume.3.7.13@gmail.com>",
+    "description": "a js object containing css values, editable and uploadable in a document as a script tag"
+}

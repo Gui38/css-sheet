@@ -14,11 +14,24 @@ if you have some kind of document object...
 var virtualCssSheet = function ( doc=undefined ) {
   //Module ---------------------------------------------
 
+  this.isDocument = function (doc)
+  {
+    try {
+      doc.getElementById("test");
+      //returns null if doc is a document
+      //throws error if not
+      return true;
+    } catch (e) {
+      return false;
+    }
+  };
+
+
   //_______________________initialize
 
   this.autoUpload = true;
 
-  if ( doc instanceof HTMLDocument == false )
+  if ( this.isDocument(doc) == false )
   {
     console.log("virtualCssSheet >> no document, method upload unavailable")
     this.document = undefined;
@@ -78,9 +91,9 @@ var virtualCssSheet = function ( doc=undefined ) {
 
   this.upload = function ( doc=undefined ) {
 
-    if ( doc instanceof HTMLDocument == false )
+    if ( this.isDocument(doc) == false )
     {
-      if ( this.document instanceof HTMLDocument == false )
+      if ( this.isDocument(this.document) == false )
       {
         throw new Error ("virtualCssSheet >> no valid document, no upload possible");
         return undefined;//I'm not sure throw will stop the code, I beginner
@@ -103,7 +116,6 @@ var virtualCssSheet = function ( doc=undefined ) {
 
 
 
-
   // useful functions ---------------------------------
   this.removeAllChilds = function(element)
   {
@@ -122,10 +134,9 @@ var virtualCssSheet = function ( doc=undefined ) {
 
 
 // Other exports ---------------------------
-var exports;
-if (exports) {
+var module;
+if (module)
+{
   // for node JS ---------------------------
-  for (key in virtualCssSheet) {
-    exports[key] = virtualCssSheet[key];
-  }
+  module.exports = virtualCssSheet;
 }

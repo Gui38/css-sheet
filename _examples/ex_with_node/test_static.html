@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<!-- THIS DOCUMENT HAS NO <head>
+  but it seems to work anyway
+  hope it will work with node documents...
+-->
+
+  <body>
+
+    <div class="VCS">
+      hello world
+    </div>
+
+    <a href="/">go back to menu</a>
+    <br/>
+    <a href="/server">see the server-side version</a>
+
+  </body>
+
+  <script type="text/javascript" src="../../virtualCssSheet.js"></script>
+  <script type="text/javascript">
+
+cssSheet = new virtualCssSheet(document);
+
+cssSheet.set(".VCS", "background", "#FA7");
+cssSheet.set(".VCS", "font-size", "2em");
+cssSheet.set(".VCS", "color", "#FFF");
+
+cssSheet.set("a", "color", "#FA7");
+cssSheet.set("a", "text-decoration", "none");
+cssSheet.set("a:hover", "text-shadow", "1px 1px 2px black");
+cssSheet.set("a:active", "color", "#A84")
+
+  </script>
+</html>

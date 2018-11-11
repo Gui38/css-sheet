@@ -2,6 +2,13 @@
 *a javascript module to dynamically edit css properties,
 just like a virtual css sheet*
 
+## available in browser or in node
+
+This module can either be loaded from a static html file
+using a standard **script tag**,
+or in a node application, using **require("virtualCssSheet");**\
+If you wonder why use a css module in node,
+consider having your user modify the css and store it server side ?
 
 ## features and To-Dos
 
@@ -55,8 +62,8 @@ needs to be modified if the cssTree is made better
 
 *Works v 0.1.0*\
 For now, the upload(document) function
-creates a <script> tag in the head of HTMLDocument.\
-(this seems to work even in a document with no <head>)\
+creates a *script* tag in the *head* of HTMLDocument.\
+(this seems to work even in a document with no *head*)\
 Then it writes the whole css as text in the script tag.
 ```js
 yourCssSheet.upload();
@@ -71,7 +78,7 @@ than creating a string a pasting it in a script tag...
 
 *Works v 0.1.0*\
 a simple variable, set to true by default.\
-you can change this by simply doing :\
+you can change this by simply doing :
 ```js
 yourCssSheet.autoUpload = false;
 ```
@@ -87,7 +94,7 @@ there should be a call to upload if the autoUpload is set to true.
 *Works v 0.1.0*\
 If you want to export you css to a file
 or anything that requires the css to be rendered as a text,
-just use :\
+just use :
 ```js
 var cssText = yourCssSheet.render();
 ```
@@ -118,7 +125,7 @@ called yourCssSheet.cssTree\
 You can access it, but you shouldn't modify it
 by other means than virtualCssSheet methods.
 
-the structure is very simple :\
+the structure is very simple :
 ```
 {
   selector: {
@@ -139,9 +146,27 @@ for instance, creating lists for multiple selectors such as
 - **reading css**
 
 *TO DO, not done*\
-A css parser would be nice,
+A css parser would be nice !!!
+you could load a whole file,
+or write many rules at one time like :
+```js
+yourCssSheet.read(
+  `
+html,
+body {
+  background: black;
+  color: white;
+}
+button:hover {
+  ...
+}
+  `
+);
+```
+really really nice! so much faster !!
 but seems much more complicated than anything i've done so far,
-if we want to do it clean.
+if we want to do it CLEAN and UNBUGGY.
+
 
 - **removing properties and selectors**
 

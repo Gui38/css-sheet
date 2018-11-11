@@ -65,6 +65,7 @@ For now, the upload(document) function
 creates a *script* tag in the *head* of HTMLDocument.\
 (this seems to work even in a document with no *head*)\
 Then it writes the whole css as text in the script tag.
+(at second and other uploads, the same script tag is emptied, then filled with the new css)
 ```js
 yourCssSheet.upload();
 yourCssSheet.upload(document);//if yourCssSheet.document is not specified

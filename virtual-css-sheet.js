@@ -102,16 +102,16 @@ var virtualCssSheet = function ( doc=undefined ) {
       }
     }
 
-    if ( doc.getElementById("ggCss") == null )
+    if ( doc.getElementById("virtualCssSheet") == null )
     {
-      var ggCss= doc.createElement("style");
-      ggCss.id = "ggCss"
-      doc.head.appendChild(ggCss)
+      var vCssSheet= doc.createElement("style");
+      vCssSheet.id = "virtualCssSheet"
+      doc.head.appendChild(vCssSheet)
       console.log("..css tag uploaded to document")
     }
-    var ggCss = doc.getElementById("ggCss");
-    this.removeAllChilds(ggCss);
-    ggCss.appendChild( doc.createTextNode( this.render() ) );
+    var vCssSheet = doc.getElementById("vCssSheet");
+    this.removeAllChilds(vCssSheet);
+    vCssSheet.appendChild( doc.createTextNode( this.render() ) );
   };
 
 

@@ -55,7 +55,7 @@ var doc = dom.window.document;
 
 
 
-var virtualCssSheet = require("../../virtualCssSheet");
+var virtualCssSheet = require("../../virtual-css-sheet");
 
 
 var css = new virtualCssSheet(doc);

@@ -6,7 +6,10 @@ just like a virtual css sheet*
 
 This module can either be loaded from a static html file
 using a standard **script tag**,
-or in a node application, using **require("virtualCssSheet");**\
+or in a node application, using
+```js
+var virtualCssSheet = require("virtual-css-sheet");
+```
 If you wonder why use a css module in node,
 consider having your user modify the css and store it server side ?
 
@@ -15,14 +18,15 @@ consider having your user modify the css and store it server side ?
 - **virtualCssSheet object**
 
 *Works v 0.1.0*\
-To run the module, you must first create an object :
+whether you use browser or node,
+to run the module, you must first create an object :
 ```js
-var yourCssSheet = new virtualCssSheet(document);
+var yourCssSheet = virtualCssSheet(document);
 ```
-You can then call its functions.\
+You can then call its functions.
 (specifying a document isn't compulsory
-but without a valid HTMLDocument object set as
-*yourCssSheet.document*
+but without a valid HTMLDocument object set as\
+*yourCssSheet.document*\
 you will not be able to upload automatically)
 
 *possible upgrades :*\
@@ -42,9 +46,9 @@ yourCssSheet.set(
   "color",
   "#FA7");
 yourCssSheet.set(
-  "body, #container",
-  "background", 
-  "#DDD");
+  "body",
+  "#container",
+  "color", "#FA7");
 yourCssSheet.set(
   ".shadowToolBar button:hover",
   "box-shadow",
@@ -65,7 +69,6 @@ For now, the upload(document) function
 creates a *script* tag in the *head* of HTMLDocument.\
 (this seems to work even in a document with no *head*)\
 Then it writes the whole css as text in the script tag.
-(at second and other uploads, the same script tag is emptied, then filled with the new css)
 ```js
 yourCssSheet.upload();
 yourCssSheet.upload(document);//if yourCssSheet.document is not specified

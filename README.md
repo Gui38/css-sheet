@@ -46,9 +46,9 @@ yourCssSheet.set(
   "color",
   "#FA7");
 yourCssSheet.set(
-  "body",
-  "#container",
-  "color", "#FA7");
+  "body, #container",
+  "color",
+  "#FA7");
 yourCssSheet.set(
   ".shadowToolBar button:hover",
   "box-shadow",

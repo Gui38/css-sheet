@@ -10,7 +10,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Gui38/js_css-sheet.git"
+    "url": "git+https://github.com/Gui38/css-sheet.git"
   },
   "keywords": [
     "css",
@@ -21,7 +21,7 @@
   ],
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/Gui38/js_css-sheet/issues"
+    "url": "https://github.com/Gui38/css-sheet/issues"
   },
-  "homepage": "https://github.com/Gui38/js_css-sheet#readme"
+  "homepage": "https://github.com/Gui38/css-sheet#readme"
 }

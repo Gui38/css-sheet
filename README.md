@@ -66,9 +66,9 @@ needs to be modified if the cssTree is made better
 
 *Works v 0.1.0*\
 For now, the upload(document) function
-creates a *script* tag in the *head* of HTMLDocument.\
+creates a *style* tag in the *head* of HTMLDocument.\
 (this seems to work even in a document with no *head*)\
-Then it writes the whole css as text in the script tag.
+Then it writes the whole css as text in the style tag.
 ```js
 yourCssSheet.upload();
 yourCssSheet.upload(document);//if yourCssSheet.document is not specified

@@ -1,4 +1,4 @@
-# js-Css Sheet
+# css-sheet
 *a javascript module to dynamically edit css properties,
 just like a virtual css sheet*
 
@@ -8,7 +8,7 @@ This module can either be loaded from a static html file
 using a standard **script tag**,
 or in a node application, using
 ```js
-var virtualCssSheet = require("virtual-css-sheet");
+var CssSheet = require("css-sheet");
 ```
 If you wonder why use a css module in node,
 consider having your user modify the css and store it server side ?
@@ -21,7 +21,7 @@ consider having your user modify the css and store it server side ?
 whether you use browser or node,
 to run the module, you must first create an object :
 ```js
-var yourCssSheet = virtualCssSheet(document);
+var yourCssSheet = CssSheet(document);
 ```
 You can then call its functions.
 (specifying a document isn't compulsory

@@ -1,26 +1,27 @@
 {
-  "name": "virtual-css-sheet",
+  "name": "css-sheet",
   "version": "0.1.0",
   "dependencies": {},
   "author": "Guillaume3 <guillaume.3.7.13@gmail.com>",
-  "description": "a js object containing css values, editable and uploadable in a document as a script tag",
-  "main": "virtual-css-sheet.js",
+  "description": "js object for css, editable and uploadable in any document as a script tag",
+  "main": "css-sheet.js",
   "scripts": {
     "test": "module()"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Gui38/js_virtual-css-sheet.git"
+    "url": "git+https://github.com/Gui38/js_css-sheet.git"
   },
   "keywords": [
     "css",
     "sheet",
     "dynamic",
-    "class"
+    "class",
+    "virtual"
   ],
-  "license": "ISC",
+  "license": "MIT",
   "bugs": {
-    "url": "https://github.com/Gui38/js_virtual-css-sheet/issues"
+    "url": "https://github.com/Gui38/js_css-sheet/issues"
   },
-  "homepage": "https://github.com/Gui38/js_virtual-css-sheet#readme"
+  "homepage": "https://github.com/Gui38/js_css-sheet#readme"
 }

@@ -45,7 +45,7 @@ const jsdom = require("jsdom");
 //const dom = new JSDOM(`<!DOCTYPE html><p>Hello world in pure JS server side!</p>`);
 var dom = new jsdom.JSDOM(
   `<!DOCTYPE html>
-    <div class=".VCS">Hello world in pure JS server side!</div>
+    <div class="VCS">Hello world in pure JS server side!</div>
     <br/>
     <a href="/static">see the static version</a>
     <br/>
@@ -55,10 +55,10 @@ var doc = dom.window.document;
 
 
 
-var virtualCssSheet = require("../../virtual-css-sheet");
+var CssSheet = require("../../css-sheet");
 
 
-var css = new virtualCssSheet(doc);
+var css = new CssSheet(doc);
 
 css.set(".VCS", "background", "#FAE");
 css.set("a", "color", "#FAE");

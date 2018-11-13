@@ -11,7 +11,7 @@ if you have some kind of document object...
 */
 
 
-var virtualCssSheet = function ( doc=undefined ) {
+var CssSheet = function ( doc=undefined ) {
   //Module ---------------------------------------------
 
   this.isDocument = function (doc)
@@ -109,7 +109,7 @@ var virtualCssSheet = function ( doc=undefined ) {
       doc.head.appendChild(vCssSheet)
       console.log("..css tag uploaded to document")
     }
-    var vCssSheet = doc.getElementById("vCssSheet");
+    var vCssSheet = doc.getElementById("virtualCssSheet");
     this.removeAllChilds(vCssSheet);
     vCssSheet.appendChild( doc.createTextNode( this.render() ) );
   };
@@ -138,5 +138,5 @@ var module;
 if (module)
 {
   // for node JS ---------------------------
-  module.exports = virtualCssSheet;
+  module.exports = CssSheet;
 }

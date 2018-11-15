@@ -1,9 +1,9 @@
 {
   "name": "css-sheet",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "dependencies": {},
   "author": "Guillaume3 <guillaume.3.7.13@gmail.com>",
-  "description": "js object for css, editable and uploadable in any document as a script tag",
+  "description": "js object for css, editable and uploadable in any document as a style tag",
   "main": "css-sheet.js",
   "scripts": {
     "test": "module()"

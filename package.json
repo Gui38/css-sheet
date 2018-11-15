@@ -1,16 +1,16 @@
 {
-  "name": "css-sheet",
+  "name": "css_sheet",
   "version": "0.1.1",
   "dependencies": {},
   "author": "Guillaume3 <guillaume.3.7.13@gmail.com>",
   "description": "js object for css, editable and uploadable in any document as a style tag",
-  "main": "css-sheet.js",
+  "main": "css_sheet.js",
   "scripts": {
     "test": "module()"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Gui38/css-sheet.git"
+    "url": "git+https://github.com/Gui38/css_sheet.git"
   },
   "keywords": [
     "css",
@@ -21,7 +21,7 @@
   ],
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/Gui38/css-sheet/issues"
+    "url": "https://github.com/Gui38/css_sheet/issues"
   },
-  "homepage": "https://github.com/Gui38/css-sheet#readme"
+  "homepage": "https://github.com/Gui38/css_sheet#readme"
 }

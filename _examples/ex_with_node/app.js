@@ -55,10 +55,10 @@ var doc = dom.window.document;
 
 
 
-var CssSheet = require("../../css-sheet");
+var css_sheet = require("../../css_sheet");
 
 
-var css = new CssSheet(doc);
+var css = new css_sheet(doc);
 
 css.set(".VCS", "background", "#FAE");
 css.set("a", "color", "#FAE");

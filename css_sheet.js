@@ -11,7 +11,7 @@ if you have some kind of document object...
 */
 
 
-var CssSheet = function ( doc=undefined ) {
+var css_sheet = function ( doc=undefined ) {
   //Module ---------------------------------------------
 
   this.isDocument = function (doc)
@@ -138,5 +138,5 @@ var module;
 if (module)
 {
   // for node JS ---------------------------
-  module.exports = CssSheet;
+  module.exports = css_sheet;
 }
